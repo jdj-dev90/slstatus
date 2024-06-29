@@ -67,18 +67,18 @@ static const struct arg args[] = {
 	/* function format          argument */
 	//{ vol_perc, "[: %s%]    ",     NULL },//
 	{ netspeed_rx, "    %sB/s",   "wlan0"},
-	{ separator, "   |   ", NULL },
+	{ separator, " | ", NULL },
 	{ disk_free, "  %s",      "/" },
-	{ separator, "   |   ", NULL },
+	{ separator, " | ", NULL },
 	{ battery_perc, "  %s%%", "BAT0" },
-	{ separator, "   |   ", NULL },
+	{ separator, " | ", NULL },
 	{ ram_used, " %sB",      NULL },
-	{ separator, "   |   ", NULL },
-	{ run_command, " %4s", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-	{ separator, "   |   ", NULL },
+	{ separator, " | ", NULL },
+	/* { run_command, " %4s", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" }, */
+	/* { separator, " | ", NULL }, */
 	{ datetime, " %s",        "%a %b %d %r" },
-	{ separator, "   |   ", NULL },
+	{ separator, " | ", NULL },
 	{ username, " %s",       NULL },        
-	{ separator, "   |   ", NULL },
+	{ separator, " | ", NULL },
 	{ uptime, "%s   ",       NULL },        
 };
